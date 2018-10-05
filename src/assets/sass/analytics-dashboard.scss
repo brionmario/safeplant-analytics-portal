@@ -1,0 +1,85 @@
+/*!
+
+ =========================================================
+ * SAFE PLANT - Analytics Dashboard - V1.0.0
+ =========================================================
+
+ * Home Page: http://safeplant.apareciumlabs.com/
+ * Copyright 2017 Aparecium Labs (http://www.apareciumlabs.com)
+ * License MIT (https://github.com/brionmario/safeplant/blob/master/LICENSE)
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+
+//variables and mixins
+@import "safeplant-analytics/variables";
+@import "safeplant-analytics/mixins";
+@import "safeplant-analytics/shadows";
+
+//plugin css
+@import "safeplant-analytics/plugins/plugin-nouislider";
+@import "safeplant-analytics/plugins/animate";
+@import "safeplant-analytics/plugins/sweetalert2";
+@import "safeplant-analytics/plugins/datatables.net";
+@import "safeplant-analytics/plugins/jquery.jvectormap";
+@import "safeplant-analytics/plugins/plugin-datetime-picker";
+@import "safeplant-analytics/plugins/fullcalendar";
+@import "safeplant-analytics/plugins/wizard-card";
+@import "safeplant-analytics/plugins/chartist";
+@import "safeplant-analytics/plugins/select-bootstrap";
+@import "safeplant-analytics/plugins/perfect-scrollbar";
+
+
+// Core CSS
+@import "safeplant-analytics/typography";
+@import "safeplant-analytics/sidebar-and-main-panel";
+@import "safeplant-analytics/buttons";
+@import "safeplant-analytics/misc";
+@import "safeplant-analytics/inputs";
+@import "safeplant-analytics/fileupload";
+@import "safeplant-analytics/alerts";
+@import "safeplant-analytics/tables";
+@import "safeplant-analytics/forms";
+@import "safeplant-analytics/checkboxes";
+@import "safeplant-analytics/radios";
+@import "safeplant-analytics/progress";
+@import "safeplant-analytics/togglebutton";
+@import "safeplant-analytics/pages";
+@import "safeplant-analytics/tags";
+@import "safeplant-analytics/timeline";
+@import "safeplant-analytics/ripples";
+@import "safeplant-analytics/panels";
+@import "safeplant-analytics/pagination";
+@import "safeplant-analytics/labels";
+@import "safeplant-analytics/pills";
+@import "safeplant-analytics/dialogs";
+@import "safeplant-analytics/navbars";
+@import "safeplant-analytics/popups";
+@import "safeplant-analytics/footers";
+
+// Fancy Stuff
+@import "safeplant-analytics/dropdown";
+@import "safeplant-analytics/cards";
+@import "safeplant-analytics/tabs";
+@import "safeplant-analytics/responsive";
+
+//Custom
+@import "fonts";
+@import "icons";
+
+.thingspeak-container {
+  padding: 1px !important;
+}
+iframe, object, embed {
+  max-width: 100%;
+}
+
+.macroscopy, .microscopy {
+  h4 {
+    text-decoration: underline;
+  }
+}

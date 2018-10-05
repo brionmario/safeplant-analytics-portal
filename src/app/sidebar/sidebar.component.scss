@@ -1,0 +1,26 @@
+@import "~compass-mixins";
+
+:host /deep/ .logo {
+  padding: 12px 18px;
+  height: 70px;
+  .logo-normal {
+    img {
+      width: 167px;
+      float: right;
+      top: 25px;
+      right: 22px;
+      position: absolute;
+    }
+    h6 {
+      font-size: 8px;
+      width: 167px;
+      font-weight: bold;
+      float: right;
+      margin-bottom: 0;
+      top: 41px;
+      right: 24px;
+      position: absolute;
+      text-align: right;
+    }
+  }
+}

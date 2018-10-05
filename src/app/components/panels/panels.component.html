@@ -1,0 +1,94 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3 class="title text-center">Report Categories</h3>
+                <br />
+                <div class="nav-center">
+                    <ul class="nav nav-pills nav-pills-warning nav-pills-icons" role="tablist">
+                        <li class="active">
+                            <a href="#description-1" role="tab" data-toggle="tab">
+                                <i class="material-icons"><img width="32" height="32" src="../../assets/img/icons/003-tint-drop.svg"></i> Blood
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#schedule-1" role="tab" data-toggle="tab">
+                                <i class="material-icons"><img width="32" height="32" src="../../assets/img/icons/002-urine.svg"></i> Urine
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tasks-1" role="tab" data-toggle="tab">
+                                <i class="material-icons"><img width="32" height="32" src="../../assets/img/icons/004-sugar-blood-level.svg"></i> Sugar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description-1">
+                        <div class="card" *ngFor="let bloodReport of bloodReports">
+                            <div class="card-header">
+                                <h4 class="card-title">Full Blood Count</h4>
+                                <p class="category">
+                                    Uploaded on: {{bloodReport.date}} at {{bloodReport.time}}
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <b>WBC count - </b>{{bloodReport.wbc}} /cumm<br>
+                                <b>RBC count - </b>{{bloodReport.rbc}} million/ml<br>
+                                <b>Packed Cell Volume - </b>{{bloodReport.cell_volume}} %<br>
+                                <b>Hemoglobin Concentration - </b>{{bloodReport.hemoglobin_concentration}} g/dl<br>
+                                <b>Mean Corpuscular Volume - </b>{{bloodReport.corpuscular_volume}} fL<br>
+                                <b>Mean Corpuscular Hemoglobin - </b>{{bloodReport.corpuscular_hemoglobin}} pg<br>
+                                <b>Mean Corpuscular Hemoglobin Concentration - </b>{{bloodReport.corpuscular_hemoglobin_concentration}} %<br>
+                                <b>Platelet count - </b>{{bloodReport.platelet_count}} /cumm<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="schedule-1">
+                        <div class="card" *ngFor="let urineReport of urineReports">
+                            <div class="card-header">
+                                <h4 class="card-title">Urine Full Report</h4>
+                                <p class="category">
+                                    Uploaded on: {{urineReport.date}} at {{urineReport.time}}
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <div class="macroscopy">
+                                  <h4>MACROSCOPY</h4>
+                                  <b>APPEARENCE - </b>{{urineReport.appearance}}<br>
+                                  <b>pH - </b>{{urineReport.ph}}<br>
+                                  <b>SP.GRAVITY - </b>{{urineReport.gravity}}<br>
+                                  <b>PROTEIN - </b>{{urineReport.protein}}<br>
+                                  <b>SUGAR - </b>{{urineReport.sugar}}<br>
+                                </div>
+                                <div class="microscopy">
+                                  <h4>MICROSCOPY</h4>
+                                  <b>RED CELLS - </b>{{urineReport.red_cells}}<br>
+                                  <b>PUS CELLS - </b>{{urineReport.pus_cells}}<br>
+                                  <b>EPHI.CELLS</b>{{urineReport.ephi_cells}}<br>
+                                  <b>CASTS - </b>{{urineReport.casts}}<br>
+                                  <b>CRYSTALS - </b>{{urineReport.crystals}}<br>
+                                  <b>BILE SEGMENTS - </b>{{urineReport.bile_segments}}<br>
+                                  <b>OTHERS - </b>{{urineReport.others}}<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tasks-1">
+                        <div class="card" *ngFor="let bloodSugarReport of bloodSugarReports">
+                            <div class="card-header">
+                                <h4 class="card-title">Fasting Blood Sugar</h4>
+                                <p class="category">
+                                    Uploaded on: {{bloodSugarReport.date}} at {{bloodSugarReport.time}}
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <b>FBS - </b>{{bloodSugarReport.fasting_bs}} mg/dl
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+@import "~compass-mixins";
+
+:host /deep/ .card {
+  .card-header {
+    .material-icons {
+      img {
+        width: 60%;
+        margin-top: -35px;
+      }
+    }
+  }
+  .card-content {
+    .card-title {
+      .unit {
+        font-size: 12px;
+      }
+    }
+  }
+}
