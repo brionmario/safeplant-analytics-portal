@@ -1,0 +1,63 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="header text-center">
+            <h3 class="title">Data tacked by Safeplant will be visualized here</h3>
+            <p class="category">
+                Click<a target="_blank" href="https://thingspeak.com/channels/208912"> here </a> to access the thingspeak channel
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-chart">
+                    <div class="card-header thingspeak-container" data-background-color="red">
+                      <iframe width="505" height="260" frameborder="0" allowfullscreen style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/208912/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Heart Rate</h4>
+                        <p class="category">Unit - BPM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-chart">
+                    <div class="card-header thingspeak-container" data-background-color="red">
+                        <iframe width="505" height="260" frameborder="0" allowfullscreen style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/208912/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Body Temperature</h4>
+                        <p class="category">Unit - celsius</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header card-header-icon" data-background-color="blue">
+                        <i class="material-icons">timeline</i>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Step Counter
+                            <small> - Daily Report</small>
+                        </h4>
+                    </div>
+                    <div id="colouredRoundedLineChart" class="ct-chart"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header card-header-icon" data-background-color="rose">
+                        <i class="material-icons">insert_chart</i>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Blood Pressure
+                            <small>- Daily Average (Blue - Systolic, Red - Diastolic)</small>
+                        </h4>
+                    </div>
+                    <div id="multipleBarsChart" class="ct-chart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
